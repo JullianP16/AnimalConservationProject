@@ -1,0 +1,22 @@
+﻿@model IEnumerable<AnimalConservationWebsite.Models.ConservationStatus>
+
+<h2>Species Groups</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Species Group Name</th>
+            <th style="text-align: center;">Total Species</th>
+            <th style="text-align: center;">Endangered Species</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.group_name</td>
+                <td style="text-align: center;">@item.total_species</td>
+                <td style="text-align: center;">@item.endangered</td>
+            </tr>
+        }
+    </tbody>
+</table>

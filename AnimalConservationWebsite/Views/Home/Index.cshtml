@@ -3,6 +3,15 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Species Conservation</h1>
+    <p>Learn more about endangered species and their conservation status.</p>
+
+    <div class="card mx-auto" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Species Summary</h5>
+            <p class="card-text">Total Species: <strong>326080</strong></p>
+            <p class="card-text">Endangered Species: <strong>90642</strong></p>
+            <a class="btn btn-primary" asp-controller="Species" asp-action="SpeciesGroups">Explore Species Groups</a>
+        </div>
+    </div>
 </div>
