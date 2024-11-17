@@ -13,9 +13,13 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.group_name</td>
+                <td>
+                    <a asp-controller="Species" asp-action="Details" asp-route-id="@item.status_id">
+                        @item.group_name
+                    </a>
+                </td>
                 <td style="text-align: center;">@item.total_species</td>
-                <td style="text-align: center;">@item.endangered</td>
+                <td style="text-align: center;">@item.subtotal_threatened</td>
             </tr>
         }
     </tbody>

@@ -1,0 +1,31 @@
+﻿@model AnimalConservationWebsite.Models.ConservationStatus
+
+<div class="container mt-5">
+    <h2 class="fw-bold text-primary">@Model.group_name</h2>
+
+    <div class="card shadow-sm p-4 mb-4">
+        <h4 class="mb-3">Conservation Status Summary</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Total Species:</strong> @Model.total_species</p>
+                <p><strong>Extinct (EX):</strong> @Model.extinct</p>
+                <p><strong>Extinct in the Wild (EW):</strong> @Model.extinct_in_wild</p>
+                <p><strong>Subtotal Extinct:</strong> @Model.subtotal_extinct</p>
+                <p><strong>Critically Endangered (PE):</strong> @Model.critically_endangered_pe</p>
+                <p><strong>Critically Endangered (PEW):</strong> @Model.critically_endangered_pew</p>
+                <p><strong>Subtotal Critically Endangered:</strong> @Model.subtotal_critically_endangered</p>
+                <p><strong>Endangered (EN):</strong> @Model.endangered</p>
+                <p><strong>Vulnerable (VU):</strong> @Model.vulnerable</p>
+                <p><strong>Subtotal Threatened:</strong> @Model.subtotal_threatened</p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Lower Risk/Conservation Dependent (LR/cd):</strong> @Model.lower_risk_conservation_dependent</p>
+                <p><strong>Near Threatened (NT):</strong> @Model.near_threatened</p>
+                <p><strong>Least Concern (LC):</strong> @Model.least_concern</p>
+                <p><strong>Data Deficient (DD):</strong> @Model.data_deficient</p>
+            </div>
+        </div>
+    </div>
+
+    <a class="btn btn-primary" href="/Species/SpeciesGroups">Back to Species List</a>
+</div>

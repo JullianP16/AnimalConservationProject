@@ -15,14 +15,18 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
-                    
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="Species" asp-action="SpeciesGroups">Species Groups</a>
-                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Conservation" asp-action="Efforts">Conservation Efforts</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
+
 
     <div class="container">
         @RenderBody()
